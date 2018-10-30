@@ -3,7 +3,7 @@ class ChatController < ApplicationController
 
   #display at list 20 messages
   def show
-    @messages = Message.order(created_at :asc).last(20)
+    @messages = Message.order(created_at: :asc).last(20)
   end
 
   private 
